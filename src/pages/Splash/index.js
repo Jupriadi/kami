@@ -3,11 +3,11 @@ import {ActivityIndicator, Image, ImageBackground, StyleSheet, Text, View } from
 import { greaterThan } from 'react-native-reanimated'
 import  {Img} from '../../assets' 
 const Splash = ({ navigation }) => {
-    // useEffect(()=> {
-    //     setTimeout( () =>{
-    //         navigation.replace('MainApp');
-    //     }, 3000)
-    // },[navigation])
+    useEffect(()=> {
+        setTimeout( () =>{
+            navigation.replace('MainApp');
+        }, 3000)
+    },[navigation])
 
     return (
        <ImageBackground source={Img.Bg} style={styles.background}>
